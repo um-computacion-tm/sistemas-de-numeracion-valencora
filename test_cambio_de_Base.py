@@ -1,5 +1,5 @@
 import unittest
-from decimal_a_binario import decimal2binario, binario2decimal, decimal2octal,octal2decimal, decimal2hexa, hexa2decimal, binario2octal, binario2hexa
+from cambio_de_base import decimal2binario, binario2decimal, decimal2octal,octal2decimal, decimal2hexa, hexa2decimal, binario2octal, binario2hexa
 
 class TestNumeracion(unittest.TestCase):
     
