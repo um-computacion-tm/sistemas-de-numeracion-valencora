@@ -40,31 +40,28 @@ def octal2decimal(numero):
 def decimal2hexa(numero):
     result = ""
     while numero >= 16:
-        resto = numero % 16
-        numero = numero // 16
+        resto = str(numero % 16)
+        numero = numero // 16 
         result = switch(resto) + result
           
-    if numero > 9:
-        result =str(switch(numero)) + result
-    else:
-        result =str(numero) + result
+    result = switch(str(numero)) + result
     return result
+    
 
 def switch(resto):
-    aux1 = ""
-    if resto == 10:
-        aux1 = "A" 
-    elif resto == 11:
-        aux1 = "B" 
-    elif resto == 12:
-        aux1 = "C"
-    elif resto == 13:
-        aux1 = "D" 
-    elif resto == 14:
-        aux1 = "E" 
-    elif resto == 15:
-        aux1 = "F"
-    return aux1
+    if resto == "10":
+        resto = "A" 
+    elif resto == "11":
+        resto = "B" 
+    elif resto == "12":
+        resto = "C"
+    elif resto == "13":
+        resto = "D" 
+    elif resto == "14":
+        resto = "E"
+    elif resto == "15":
+        resto = "F"
+    return resto
 
 def hexa2decimal(numero):
     numero = numero[::-1]

@@ -12,7 +12,7 @@ class TestNumeracion(unittest.TestCase):
     def test_octal2decimal(self):
         self.assertEqual(octal2decimal('132'),90)
     def test_decimal2hexa(self):
-        self.assertEqual(decimal2hexa(154),'9A')
+        self.assertEqual(decimal2hexa(118),'76')
     def test_hexa2decimal(self):
         self.assertEqual(hexa2decimal('1C7'),455)
     def test_binario2octal(self):
