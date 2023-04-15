@@ -93,5 +93,26 @@ def binario2hexa(numero):
     aux2 = decimal2hexa(aux)
     return aux2
 
+def octal2binario(numero):
+    aux = octal2decimal(str(numero))
+    aux2 = decimal2binario(aux)
+    return aux2 
+
+def octal2hexa(numero):
+    aux = octal2decimal(str(numero))
+    aux2 = decimal2hexa(aux)
+    return aux2 
+
+def hexa2binario(numero):
+    aux = hexa2decimal(str(numero))
+    aux2 = decimal2binario(aux)
+    return aux2 
+
+def hexa2octal(numero):
+    aux = hexa2decimal(numero)
+    aux2 = decimal2octal(aux)
+    return aux2
+
+
 if __name__=="__main__":
     unittest.main()
